@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tetiana-vitenko-portfolio-page.netlify.app/sitemap.xml
