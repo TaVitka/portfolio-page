@@ -1,0 +1,36 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "gulpfile.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.mjs",
+    "start": "gulp start"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "author": "tavitka",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^3.0.2",
+    "del": "^7.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^9.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-ttf2woff2": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^5.0.0",
+    "jquery": "^3.7.1",
+    "sass": "^1.90.0",
+    "ttf2woff2": "^8.0.0"
+  },
+  "dependencies": {
+    "swiper": "^11.2.10"
+  }
+}
