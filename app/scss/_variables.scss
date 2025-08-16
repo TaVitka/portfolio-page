@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --content-width: 1216px;
+  --container-offset: 16px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  /* font-family */
+  --ff-primary: "Nunito", sans-serif;
+  --ff-elements: "Playfair Display", serif;
+  --ff-accent: "Comfortaa", serif;
+
+  /* font-weight */
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  /* colors */
+  --color-white: #FFFEFD;
+  --color-milk: #FFF7F1;
+  --color-black: #25282B;
+  --color-dark: #525753;
+  --color-gray: #9A9FA8;
+  --color-gray-50: rgba(154, 159, 168, 0.5);
+  --color-green: #3C801C;
+  --color-overlay: hsla(210, 8%, 16%, 0.4);
+
+  /* radius */
+  --radius-main: 24px;
+  --radius-small: 8px;
+}

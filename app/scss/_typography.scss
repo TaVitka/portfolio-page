@@ -1,0 +1,62 @@
+body {
+  font-family: var(--ff-primary);
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(18px, 3vw, 24px);
+  line-height: 1.5;
+  color: var(--color-black);
+}
+
+h1,
+h2 {
+  overflow: hidden;
+  font-family: var(--ff-elements);
+  font-weight: var(--fw-700);
+}
+
+h1 {
+  font-size: clamp(32px, 3.8vw, 64px);
+  line-height: 1.2;
+}
+
+h1 br {
+  display: none;
+}
+
+h2 {
+  position: relative;
+  width: fit-content;
+  font-size: clamp(32px, 3vw, 48px);
+  line-height: 1.5;
+  color: var(--color-dark);
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64%;
+  height: 4px;
+  background-color: var(--color-green);
+  border-radius: var(--radius-small);
+}
+
+.menu ul a {
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: var(--fw-300);
+  color: var(--color-milk);
+  transition: color 0.3s ease-in-out;
+}
+
+.menu ul a:hover {
+  color: var(--color-black);
+}
+
+@media (max-width: 540px) {
+  h1 br {
+    display: block;
+  }
+}
