@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="./images/">
+  <link rel="shortcut icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="./images/favicon.ico">
+  <title>Frontend Developer - Tetiana Vitenko Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="menu">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="logo" width="145" height="16">
+        </a>
+
+        <button class="menu__burger" type="button"></button>
+
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#about">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#projects">Projects</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <p class="accent">
+              front-end developer
+            </p>
+            <h1>
+              Hello, my name is <br>
+              Tetiana Vitenko
+            </h1>
+            <div class="hero__desc">
+              <p>
+                I&rsquo;m a front&#45;end developer with over two years of experience in web development. I love
+                bringing designers visions to life, turning UI&#47;UX concepts into beautiful, responsive websites.
+              </p>
+            </div>
+            <ul class="hero__links">
+              <li class="hero__link">
+                <a class="btn" href="#projects">
+                  Projects
+                </a>
+              </li>
+              <li class="hero__link">
+                <a class="btn btn--transparent" href="https://www.linkedin.com/in/tavitka" target="_blank">
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__media">
+            <img class="hero__img" src="images/hero-image.png" alt="Tetiana Vitenko image" width="720" height="629"
+              loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2>
+          About me
+        </h2>
+
+        <div class="about__content">
+          <p>
+            I&rsquo;m a front&#45;end developer from Ukraine, currently living in Stockholm and learning swedish at an
+            SFI course. My journey
+            into web development began with a career shift &mdash; I originally worked in journalism but became
+            interested in how websites are created and how design turns into something functional. I decided to give it
+            a try, and it quickly became my passion.
+          </p>
+          <p>
+            With over two years of experience, I&rsquo;ve worked with WordPress and Magento 2, creating custom websites
+            that seamlessly combine design and functionality. I specialize in HTML, CSS (Sass, Less), and JavaScript,
+            using tools like Git, Docker, DDEV, Gulp, Parcel and other to build responsive, pixel&#45;perfect web pages.
+          </p>
+          <p>
+            For me, web development is more than just writing code &mdash; it&rsquo;s about bringing ideas to life. I
+            love transforming designs into functional websites that not only look great but also help businesses grow
+            and improve user experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2>
+          Projects
+        </h2>
+
+        <p class="accent">
+          Here are some of my latest projects
+        </p>
+
+        <div class="tabs">
+          <ul class="tabs__nav">
+            <li>
+              <span class="btn btn--transparent tabs__btn" data-btn="all">
+                All
+              </span>
+            </li>
+
+            <li>
+              <span class="btn btn--transparent tabs__btn" data-btn="wp">
+                WordPress
+              </span>
+            </li>
+
+            <li>
+              <span class="btn btn--transparent tabs__btn" data-btn="custom">
+                Custom Projects
+              </span>
+            </li>
+          </ul>
+
+          <ul class="tabs__list">
+
+            <li class="tabs__item" data-id="wp">
+
+              <a href="https://markupers.com.ua/" target="_blank">
+                <img src="images/projects/markupers.jpg" alt="Markupers project" width="380" height="220"
+                  loading="lazy">
+
+                <span>visit</span>
+              </a>
+
+            </li>
+
+            <li class="tabs__item" data-id="custom">
+              <a href="https://favelatripsbogota.com/" target="_blank">
+                <img src="images/projects/favelatripsbogota.jpg" alt="Favela Trips Bogota project" width="380"
+                  height="220" loading="lazy">
+
+                <span>visit</span>
+              </a>
+            </li>
+
+            <li class="tabs__item" data-id="custom">
+
+              <a href="https://fishingspotrentals.com/" target="_blank">
+                <img src="images/projects/fishingspotrentals.jpg" alt="Fishing Spot Rentals project" width="380"
+                  height="220" loading="lazy">
+
+                <span>visit</span>
+              </a>
+
+            </li>
+
+            <li class="tabs__item" data-id="custom">
+
+              <a href="https://heritagecastletours.com/" target="_blank">
+                <img src="images/projects/heritagecastletours.jpg" alt="Heritage Castle Tours project" width="380"
+                  height="220" loading="lazy">
+
+                <span>visit</span>
+              </a>
+
+            </li>
+
+            <!--            <li class="tabs__item" data-id="wp">-->
+
+            <!--              <a href="https://korotko-te.news/" target="_blank">-->
+            <!--                <img src="images/projects/korotkotenews.jpg" alt="Korotko Ternopil News project" width="380"-->
+            <!--                  height="220" loading="lazy">-->
+
+            <!--                <span>visit</span>-->
+            <!--              </a>-->
+
+            <!--            </li>-->
+
+            <li class="tabs__item" data-id="custom">
+
+              <a href="https://mexicovipgetaways.com/" target="_blank">
+                <img src="images/projects/mexicovipgetaways.jpg" alt="Mexico Vip Getaways project" width="380"
+                  height="220" loading="lazy">
+
+                <span>visit</span>
+              </a>
+
+            </li>
+
+            <li class="tabs__item" data-id="wp">
+
+              <a href="https://togarashi.pp.ua" target="_blank">
+                <img src="images/projects/togarashi.jpg" alt="Togarashi Anime Site  project" width="380" height="220"
+                  loading="lazy">
+
+                <span>visit</span>
+              </a>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="knowledge" id="knowledge">
+      <div class="container">
+        <h2>
+          Knowledge
+        </h2>
+
+        <p class="accent">
+          Here are a few certifications I’ve completed to strengthen my expertise
+        </p>
+
+        <ul class="flex-box">
+          <li class="flex-box__item">
+            <a href="https://www.freecodecamp.org/certification/fcc2efbcb5c-3cde-4b2b-9db6-b2f336fa321c/responsive-web-design"
+              target="_blank">
+              <img src="images/certificates/freecodecamp-responsive-web-design.jpg"
+                alt="FreeCodeCamp certificate for Responsive Web Design" width="380" height="220" loading="lazy">
+
+              <p>freeCodeCamp developer certificate for completed Responsive Web Design course</p>
+
+              <span>More</span>
+            </a>
+          </li>
+
+          <li class="flex-box__item">
+            <a href="images/certificates/markup-developer.jpg" target="_blank">
+              <img src="images/certificates/markup-developer.jpg" alt="Markup developer certificate" width="380"
+                height="220" loading="lazy">
+
+              <p>Markup Developer certificate</p>
+
+              <span>More</span>
+            </a>
+          </li>
+
+          <li class="flex-box__item">
+            <a href="images/certificates/elogic-certificate.jpg" target="_blank">
+              <img src="images/certificates/elogic-certificate.jpg" alt="Magento 2 frontend certificate from Elogic"
+                width="380" height="220" loading="lazy">
+
+              <p>Elogic Magento 2 Front-End certificate</p>
+
+              <span>More</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <h2>
+        Contacts
+      </h2>
+
+      <div class="footer__content">
+        <ul class="socials">
+          <li class="socials__item socials__item--linkedin">
+            <a class="visible-hidden" href="https://www.linkedin.com/in/tavitka" target="_blank">
+              LinkedIn
+            </a>
+          </li>
+
+          <li class="socials__item socials__item--facebook">
+            <a class="visible-hidden" href="https://www.facebook.com/tanya.vitenko.5" target="_blank">
+              Facebook
+            </a>
+          </li>
+
+          <li class="socials__item socials__item--email">
+            <a class="visible-hidden" href="mailto:tavitka17@gmail.com">
+              Email
+            </a>
+          </li>
+        </ul>
+
+        <small>&copy; Tetiana Vitenko 2025</small>
+      </div>
+    </div>
+  </footer>
+  <div class="overlay"></div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
