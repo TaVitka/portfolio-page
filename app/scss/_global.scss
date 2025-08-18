@@ -1,0 +1,120 @@
+html,
+body {
+  background-color: var(--color-white);
+}
+
+.page {
+  scroll-padding-top: calc(var(--header-height));
+
+  &.overflow {
+    overflow: hidden;
+  }
+}
+
+body {
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  width: 100%;
+  max-width: var(--container-width);
+}
+
+.overlay {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  transition: background-color 0.3s ease-in-out, filter 0.4s ease-in;
+
+  &.active {
+    background-color: var(--color-overlay);
+    backdrop-filter: blur(4px) brightness(0.5);
+    z-index: 1;
+    pointer-events: all;
+  }
+}
+
+section {
+  padding: clamp(26px, 6vw, 52px) 0;
+
+  &[id] {
+    scroll-margin-top: 40px;
+  }
+
+  h2 {
+    margin: 0 auto clamp(30px, 5vw, 40px);
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 24px;
+  border: 2px solid var(--color-green);
+  border-radius: var(--radius-small);
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease-in, border-color 0.4s ease-in-out, background-color 0.3s ease-in;
+
+  &.selected {
+    border: inherit;
+  }
+
+  &:not(.btn--transparent),
+  &--transparent.selected,
+  &--transparent:hover {
+    color: var(--color-milk);
+    background-color: var(--color-green);
+  }
+
+  &--transparent,
+  &:hover {
+    background-color: transparent;
+    border-color: var(--color-dark);
+    color: var(--color-dark);
+  }
+
+  &--transparent:hover {
+    color: var(--color-white);
+  }
+
+  &--transparent:hover {
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+  }
+}
+
+.visible-hidden {
+  font-size: 0;
+  color: transparent;
+  line-height: 0;
+}
+
+.sr-only {
+  position: absolute !important;
+  clip-path: inset(50%) !important;
+  overflow: hidden !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  white-space: nowrap !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+.accent {
+  max-width: 50%;
+  margin: 0 auto clamp(30px, 5vw, 40px);
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.2;
+  font-weight: var(--fw-700);
+  color: var(--color-green);
+  text-transform: uppercase;
+  text-align: center;
+}

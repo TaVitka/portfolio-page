@@ -90,6 +90,11 @@ p {
   overflow-wrap: break-word;
 }
 
+img {
+  width: 100%;
+  min-height: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
