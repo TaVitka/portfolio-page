@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
   //header
 
-  const page = document.querySelector('body');
+  const page = document.querySelector('html');
   const pageHeader = document.querySelector('.header');
   const pageFooter = document.querySelector('.footer');
   const pageOverlay = document.querySelector('.overlay');
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function(){
     lastHeaderPosition = window.scrollY;
     addClassItem('.header', 'scroll');
 
-    if (headerHeight - 50 < lastHeaderPosition && lastHeaderPosition > newHeaderPosition && newHeaderPosition !== 0) {
+    if (headerHeight < lastHeaderPosition && lastHeaderPosition > newHeaderPosition && newHeaderPosition !== 0) {
       addClassItem('.header', 'hide');
       addClassItem('.header', 'scroll');
       } else if ((newHeaderPosition > lastHeaderPosition) && lastHeaderPosition !== 0 || lastHeaderPosition < headerHeight) {
@@ -84,10 +84,12 @@ document.addEventListener('DOMContentLoaded', function(){
         });
     }
 
+
+    // creating burger menu func.
     const burgerBtn = document.querySelector('.menu__burger');
     const headerMenu = document.querySelector('.menu__list');
 
-    if (window.matchMedia('(max-width: 787px)').matches) {
+    if (window.matchMedia('(max-width: 787px)').matches && pageHeader) {
       burgerBtn.addEventListener('click', function(){
         this.classList.toggle('open');
         headerMenu.classList.toggle('open');

@@ -14,7 +14,7 @@
     content="Front-enddeveloper specializing in HTML, CSS, JavaScript, WordPress & Magento. Creating responsive, pixel-perfect websites that combine design and functionality">
   <meta name="keywords"
     content="front-end, frontend, developer, front-end developer, frontend developer, website developer, webpage developer, markup developer, create website, WordPress, wordpress, wp developer, wordpress developer, wordpress theme development, wordpress frontend developer, JavaScript, JS, pixel-perfect, responsive, Tetiana Vitenko">
-  <link rel="preload" href="images/preload.webp" as="image" type="image/webp">
+  <link rel="preload" href="images/hero-image.webp" as="image" type="image/webp">
 
 
   <!-- Socials | Open Graph -->
@@ -125,8 +125,12 @@
           </div>
 
           <div class="hero__media">
-            <img class="hero__img" src="images/hero-image.png" alt="Tetiana Vitenko image" width="720" height="629"
-              loading="lazy">
+            <picture class="hero__img">
+              <source srcset="images/hero-image.webp" type="image/webp">
+
+              <img class="" src="images/hero-image.png" alt="Tetiana Vitenko image" width="720" height="629"
+                loading="lazy">
+            </picture>
           </div>
         </div>
       </div>
@@ -191,81 +195,121 @@
             </li>
           </ul>
 
-          <ul class="tabs__list">
+          <ul class="tabs__list flex-box">
+            <li class="tabs__item flex-box__item" data-id="custom">
+              <a href="https://diana-lynva-psy.netlify.app/" target="_blank">
+                <picture>
+                  <source srcset="images/projects/diana-lynva-psy.webp" type="image/webp">
+            
+                  <img src="images/projects/diana-lynva-psy.jpg" alt="Diana Lynva Psychology website" width="380" height="220" loading="lazy">
+                </picture>
+            
+                <span>visit</span>
+              </a>
+            </li>
 
-            <li class="tabs__item" data-id="wp">
-
+            <li class="tabs__item flex-box__item" data-id="wp">
               <a href="https://markupers.com.ua/" target="_blank">
-                <img src="images/projects/markupers.jpg" alt="Markupers project" width="380" height="220"
-                  loading="lazy">
+                <picture>
+                  <source srcset="images/projects/markupers.webp" type="image/webp">
+
+                  <img src="images/projects/markupers.jpg" alt="Markupers project" width="380" height="220"
+                    loading="lazy">
+                </picture>
 
                 <span>visit</span>
               </a>
-
             </li>
 
-            <li class="tabs__item" data-id="custom">
+            <li class="tabs__item flex-box__item" data-id="custom">
               <a href="https://favelatripsbogota.com/" target="_blank">
-                <img src="images/projects/favelatripsbogota.jpg" alt="Favela Trips Bogota project" width="380"
-                  height="220" loading="lazy">
+                <picture>
+                  <source srcset="images/projects/favelatripsbogota.webp" type="image/webp">
+
+                  <img src="images/projects/favelatripsbogota.jpg" alt="Favela Trips Bogota project" width="380"
+                    height="220" loading="lazy">
+                </picture>
 
                 <span>visit</span>
               </a>
             </li>
 
-            <li class="tabs__item" data-id="custom">
-
+            <li class="tabs__item flex-box__item" data-id="custom">
               <a href="https://fishingspotrentals.com/" target="_blank">
-                <img src="images/projects/fishingspotrentals.jpg" alt="Fishing Spot Rentals project" width="380"
-                  height="220" loading="lazy">
+                <picture>
+                  <source srcset="images/projects/fishingspotrentals.webp" type="image/webp">
+
+                  <img src="images/projects/fishingspotrentals.jpg" alt="Fishing Spot Rentals project" width="380"
+                    height="220" loading="lazy">
+                </picture>
 
                 <span>visit</span>
               </a>
-
             </li>
 
-            <li class="tabs__item" data-id="custom">
-
+            <li class="tabs__item flex-box__item" data-id="custom">
               <a href="https://heritagecastletours.com/" target="_blank">
-                <img src="images/projects/heritagecastletours.jpg" alt="Heritage Castle Tours project" width="380"
-                  height="220" loading="lazy">
+                <picture>
+                  <source srcset="images/projects/heritagecastletours.webp" type="image/webp">
+
+                  <img src="images/projects/heritagecastletours.jpg" alt="Heritage Castle Tours project" width="380"
+                    height="220" loading="lazy">
+                </picture>
 
                 <span>visit</span>
               </a>
-
             </li>
 
-            <!--            <li class="tabs__item" data-id="wp">-->
+            <li class="tabs__item flex-box__item" data-id="wp">
+              <a href="https://korotko.online/" target="_blank">
+                <picture>
+                  <source srcset="images/projects/korotkotenews.webp" type="image/webp">
 
-            <!--              <a href="https://korotko-te.news/" target="_blank">-->
-            <!--                <img src="images/projects/korotkotenews.jpg" alt="Korotko Ternopil News project" width="380"-->
-            <!--                  height="220" loading="lazy">-->
-
-            <!--                <span>visit</span>-->
-            <!--              </a>-->
-
-            <!--            </li>-->
-
-            <li class="tabs__item" data-id="custom">
-
-              <a href="https://mexicovipgetaways.com/" target="_blank">
-                <img src="images/projects/mexicovipgetaways.jpg" alt="Mexico Vip Getaways project" width="380"
-                  height="220" loading="lazy">
+                  <img src="images/projects/korotkotenews.jpg" alt="Korotko Ternopil News project" width="380"
+                    height="220" loading="lazy">
+                </picture>
 
                 <span>visit</span>
               </a>
-
             </li>
 
-            <li class="tabs__item" data-id="wp">
-
-              <a href="https://togarashi.pp.ua" target="_blank">
-                <img src="images/projects/togarashi.jpg" alt="Togarashi Anime Site  project" width="380" height="220"
-                  loading="lazy">
-
+            <li class="tabs__item flex-box__item" data-id="custom">
+              <a href="https://onlinefinancialassist.com/" target="_blank">
+                <picture>
+                  <source srcset="images/projects/onlinefinancialassist.webp" type="image/webp">
+            
+                  <img src="images/projects/onlinefinancialassist.jpg" alt="Online Financial Assist project" width="380" height="220"
+                    loading="lazy">
+                </picture>
+            
                 <span>visit</span>
               </a>
+            </li>
 
+            <li class="tabs__item flex-box__item" data-id="wp">
+              <a href="https://renewablenergygroup.com/" target="_blank">
+                <picture>
+                  <source srcset="images/projects/renewablenergygroup.webp" type="image/webp">
+            
+                  <img src="images/projects/renewablenergygroup.jpg" alt="Renewable Energy Group project" width="380" height="220"
+                    loading="lazy">
+                </picture>
+            
+                <span>visit</span>
+              </a>
+            </li>
+
+            <li class="tabs__item flex-box__item" data-id="wp">
+              <a href="https://interiorsbydesigners.com/" target="_blank">
+                <picture>
+                  <source srcset="images/projects/interiorsbydesigners.webp" type="image/webp">
+            
+                  <img src="images/projects/interiorsbydesigners.jpg" alt="Interiors by Designers project" width="380" height="220"
+                    loading="lazy">
+                </picture>
+            
+                <span>visit</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -286,10 +330,15 @@
           <li class="flex-box__item">
             <a href="https://www.freecodecamp.org/certification/fcc2efbcb5c-3cde-4b2b-9db6-b2f336fa321c/responsive-web-design"
               target="_blank">
-              <img src="images/certificates/freecodecamp-responsive-web-design.jpg"
-                alt="FreeCodeCamp certificate for Responsive Web Design" width="380" height="220" loading="lazy">
 
-              <p>freeCodeCamp developer certificate for completed Responsive Web Design course</p>
+              <picture class="flex-box__item-image">
+                <source srcset="images/certificates/freecodecamp-responsive-web-design.webp" type="image/webp">
+              
+                <img src="images/certificates/freecodecamp-responsive-web-design.jpg"
+                  alt="FreeCodeCamp certificate for Responsive Web Design" width="380" height="220" loading="lazy">
+              </picture>
+
+              <p class="flex-box__item-desc">freeCodeCamp developer certificate for completed Responsive Web Design course</p>
 
               <span>More</span>
             </a>
@@ -297,10 +346,14 @@
 
           <li class="flex-box__item">
             <a href="images/certificates/markup-developer.jpg" target="_blank">
-              <img src="images/certificates/markup-developer.jpg" alt="Markup developer certificate" width="380"
-                height="220" loading="lazy">
+              <picture class="flex-box__item-image">
+                <source srcset="images/certificates/markup-developer.webp" type="image/webp">
+              
+                <img src="images/certificates/markup-developer.jpg" alt="Markup developer certificate" width="380"
+                  height="220" loading="lazy">
+              </picture>
 
-              <p>Markup Developer certificate</p>
+              <p class="flex-box__item-desc">Markup Developer certificate</p>
 
               <span>More</span>
             </a>
@@ -308,10 +361,14 @@
 
           <li class="flex-box__item">
             <a href="images/certificates/elogic-certificate.jpg" target="_blank">
-              <img src="images/certificates/elogic-certificate.jpg" alt="Magento 2 frontend certificate from Elogic"
-                width="380" height="220" loading="lazy">
-
-              <p>Elogic Magento 2 Front-End certificate</p>
+              <picture class="flex-box__item-image">
+                <source srcset="images/certificates/elogic-certificate.webp" type="image/webp">
+              
+                <img src="images/certificates/elogic-certificate.jpg" alt="Magento 2 frontend certificate from Elogic"
+                  width="380" height="220" loading="lazy">
+              </picture>
+              
+              <p class="flex-box__item-desc">Elogic Magento 2 Front-End certificate</p>
 
               <span>More</span>
             </a>

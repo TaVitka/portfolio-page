@@ -1,0 +1,16 @@
+@mixin flex-vc-hsb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-vc {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-a-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
