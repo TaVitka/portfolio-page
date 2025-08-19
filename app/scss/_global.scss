@@ -41,7 +41,11 @@ body {
 }
 
 section {
-  padding: clamp(26px, 6vw, 52px) 0;
+  padding-top: clamp(26px, 6vw, 52px);
+
+  &:not(:last-of-type) {
+    padding-bottom: clamp(26px, 6vw, 52px);
+  }
 
   &[id] {
     scroll-margin-top: 40px;
@@ -49,6 +53,10 @@ section {
 
   h2 {
     margin: 0 auto clamp(30px, 5vw, 40px);
+  }
+
+  @media (max-width: 480px) {
+    padding-bottom: clamp(26px, 6vw, 52px);
   }
 }
 

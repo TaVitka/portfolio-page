@@ -223,9 +223,28 @@
 }
 
 .footer {
-  padding: clamp(20px, 5vw, 40px) 0;
-  background-color: var(--color-green);
+  position: relative;
   color: var(--color-milk);
+  padding-top: 18vw;
+
+  &__wrapper {
+    padding-bottom: clamp(20px, 5vw, 40px);
+    background-color: var(--color-green);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    min-height: 19vw;
+    background-image: url(../images/footer-decor.svg);
+  }
+
 
   h2 {
     margin: 0 auto clamp(30px, 5vw, 40px);
@@ -284,6 +303,13 @@
   }
 }
 
+@media (min-width: 1800px) {
+  .hero {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 1280px) {
   .hero {
     padding-top: 240px;
@@ -303,7 +329,7 @@
   }
 
   .hero {
-    padding-top: 530px;
+    padding-top: clamp(290px, 52vw, 400px);
 
     &__media {
       width: 100%;
@@ -311,7 +337,11 @@
 
     &__img {
       width: inherit;
-      object-position: center 30%;
+
+      img {
+        object-position: top right;
+        object-fit: contain;
+      }
     }
 
     &__content {
@@ -332,6 +362,10 @@
       &:hover picture {
         transform: scale(1);
         filter: none
+      }
+
+      &:hover p {
+        color: var(--color-green);
       }
     }
   }
@@ -399,28 +433,46 @@
   .menu__item:not(:last-child) {
     margin-bottom: 26px;
   }
-
-  .hero {
-    padding-top: 420px;
-  }
 }
 
 @media (max-width: 560px) {
-  .menu__list {
-    width: 100%;
+  .menu {
+    &__list {
+      width: 100%;
+    }
+
+    &__item {
+      text-align: right;
+    }
   }
 
-  .menu__item {
-    text-align: right;
-  }
+  .hero {
+    padding-top: var(--header-height);
+    overflow: hidden;
 
-  .hero__content .accent,
-  .hero__content h1 {
-    text-align: center;
-  }
+    &__inner {
+      flex-direction: column-reverse;
+    }
 
-  .hero__links {
-    justify-content: space-evenly;
+    &__media {
+      position: relative;
+      width: calc(100% + (2 * var(--container-offset)));
+    }
+
+    &__img {
+      img {
+        height: auto;
+      }
+    }
+
+    &__links {
+      justify-content: space-evenly;
+    }
+
+    &__content .accent,
+    &__content h1 {
+      text-align: center;
+    }
   }
 
   .about h2 {
